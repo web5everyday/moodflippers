@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width" />
+        <meta charSet="utf-8" />
+        <title>Mood Flippers</title>
+        <meta name="description" content="By Lucas Zanotto" />
+        <link rel="icon" href="favicon.ico" />
+        <meta property="og:title" content="Mood Flippers" />
+        <meta property="og:description" content="By Lucas Zanotto" />
+        <meta property="og:image" content="https://moodflippers-go0pqinnu-rcc.vercel.app/OG-MoodFlippers.jpg" />
+        <meta property="og:url" content="https://moodflippers-go0pqinnu-rcc.vercel.app/" />
+        <meta property="og:site_name" content="Mood Flippers" />
+        <meta name="twitter:title" content="Mood Flippers" />
+        <meta name="twitter:description" content="By Lucas Zanotto" />
+        <meta name="twitter:image" content="https://moodflippers-go0pqinnu-rcc.vercel.app/OG-MoodFlippers.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@moodrollers" />
+        <meta name="next-head-count" content="15" />
+        <link rel="preconnect" href="https://use.typekit.net/" crossorigin />
+        <link rel="preload" href="css/0518dcf99d6481c0.css" as="style" />
+        <link rel="stylesheet" href="css/0518dcf99d6481c0.css" data-n-g="" />
+        <noscript data-n-css=""></noscript>
+        <script defer="" nomodule="" src="chunks/polyfills-5cd94c89d3acac5f.js"></script>
+        <script src="chunks/webpack-f747972c5b6df403.js" defer=""></script>
+        <script src="chunks/framework-75db3117d1377048.js" defer=""></script>
+        <script src="chunks/main-acc6aa4f8b2ad231.js" defer=""></script>
+        <script src="chunks/pages/_app-ade1fbba45d02ba7.js" defer=""></script>
+        <script src="chunks/526-ed1085fa0456121a.js" defer=""></script>
+        <script src="chunks/pages/index-8efa3c276a6541db.js" defer=""></script>
+        <script src="_buildManifest.js" defer=""></script>
+        <script src="_ssgManifest.js" defer=""></script>
+        <script src="_middlewareManifest.js" defer=""></script>
+        <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <style data-href="https://use.typekit.net/jub2uud.css">
+          @import url("https://p.typekit.net/p.css?s=1&amp;k=jub2uud&amp;ht=tk&amp;f=10879.10880.10884.10885.15586.15587.32874.32875&amp;a=31586057&amp;app=typekit&amp;e=css");
+      
+          @font-face {
+            font-family: "futura-pt";
+            src: url("https://use.typekit.net/af/2cd6bf/00000000000000000001008f/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&amp;fvd=n5&amp;v=3") format("woff2"), url("https://use.typekit.net/af/2cd6bf/00000000000000000001008f/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&amp;fvd=n5&amp;v=3") format("woff"), url("https://use.typekit.net/af/2cd6bf/00000000000000000001008f/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&amp;fvd=n5&amp;v=3") format("opentype");
+            font-display: auto;
+            font-style: normal;
+            font-weight: 500;
+            font-stretch: normal
+          }
+      
+          @font-face {
+            font-family: "futura-pt";
+            src: url("https://use.typekit.net/af/1eb35a/000000000000000000010090/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&amp;fvd=i5&amp;v=3") format("woff2"), url("https://use.typekit.net/af/1eb35a/000000000000000000010090/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&amp;fvd=i5&amp;v=3") format("woff"), url("https://use.typekit.net/af/1eb35a/000000000000000000010090/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&amp;fvd=i5&amp;v=3") format("opentype");
+            font-display: auto;
+            font-style: italic;
+            font-weight: 500;
+            font-stretch: normal
+          }
+      
+          @font-face {
+            font-family: "futura-pt";
+            src: url("https://use.typekit.net/af/9b05f3/000000000000000000013365/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&amp;fvd=n4&amp;v=3") format("woff2"), url("https://use.typekit.net/af/9b05f3/000000000000000000013365/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&amp;fvd=n4&amp;v=3") format("woff"), url("https://use.typekit.net/af/9b05f3/000000000000000000013365/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&amp;fvd=n4&amp;v=3") format("opentype");
+            font-display: auto;
+            font-style: normal;
+            font-weight: 400;
+            font-stretch: normal
+          }
+      
+          @font-face {
+            font-family: "futura-pt";
+            src: url("https://use.typekit.net/af/cf3e4e/000000000000000000010095/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&amp;fvd=i4&amp;v=3") format("woff2"), url("https://use.typekit.net/af/cf3e4e/000000000000000000010095/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&amp;fvd=i4&amp;v=3") format("woff"), url("https://use.typekit.net/af/cf3e4e/000000000000000000010095/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&amp;fvd=i4&amp;v=3") format("opentype");
+            font-display: auto;
+            font-style: italic;
+            font-weight: 400;
+            font-stretch: normal
+          }
+      
+          @font-face {
+            font-family: "futura-pt";
+            src: url("https://use.typekit.net/af/c4c302/000000000000000000012192/27/l?subset_id=2&amp;fvd=n6&amp;v=3") format("woff2"), url("https://use.typekit.net/af/c4c302/000000000000000000012192/27/d?subset_id=2&amp;fvd=n6&amp;v=3") format("woff"), url("https://use.typekit.net/af/c4c302/000000000000000000012192/27/a?subset_id=2&amp;fvd=n6&amp;v=3") format("opentype");
+            font-display: auto;
+            font-style: normal;
+            font-weight: 600;
+            font-stretch: normal
+          }
+      
+          @font-face {
+            font-family: "futura-pt";
+            src: url("https://use.typekit.net/af/1b297b/000000000000000000012193/27/l?subset_id=2&amp;fvd=i6&amp;v=3") format("woff2"), url("https://use.typekit.net/af/1b297b/000000000000000000012193/27/d?subset_id=2&amp;fvd=i6&amp;v=3") format("woff"), url("https://use.typekit.net/af/1b297b/000000000000000000012193/27/a?subset_id=2&amp;fvd=i6&amp;v=3") format("opentype");
+            font-display: auto;
+            font-style: italic;
+            font-weight: 600;
+            font-stretch: normal
+          }
+      
+          @font-face {
+            font-family: "futura-pt-bold";
+            src: url("https://use.typekit.net/af/053fc9/00000000000000003b9af1e4/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&amp;fvd=n7&amp;v=3") format("woff2"), url("https://use.typekit.net/af/053fc9/00000000000000003b9af1e4/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&amp;fvd=n7&amp;v=3") format("woff"), url("https://use.typekit.net/af/053fc9/00000000000000003b9af1e4/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&amp;fvd=n7&amp;v=3") format("opentype");
+            font-display: auto;
+            font-style: normal;
+            font-weight: 700;
+            font-stretch: normal
+          }
+      
+          @font-face {
+            font-family: "futura-pt-bold";
+            src: url("https://use.typekit.net/af/72575c/00000000000000003b9af1e5/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&amp;fvd=i7&amp;v=3") format("woff2"), url("https://use.typekit.net/af/72575c/00000000000000003b9af1e5/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&amp;fvd=i7&amp;v=3") format("woff"), url("https://use.typekit.net/af/72575c/00000000000000003b9af1e5/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&amp;fvd=i7&amp;v=3") format("opentype");
+            font-display: auto;
+            font-style: italic;
+            font-weight: 700;
+            font-stretch: normal
+          }
+      
+          .tk-futura-pt {
+            font-family: "futura-pt", sans-serif
+          }
+      
+          .tk-futura-pt-bold {
+            font-family: "futura-pt-bold", sans-serif
+          }
+        </style>
+      </head>
+      
+      <body>
+        <div id="__next">
+          <div data-rk="">
+            <style>
+              [data-rk] {
+                --rk-fonts-body: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+                --rk-radii-actionButton: 0px;
+                --rk-radii-connectButton: 0px;
+                --rk-radii-menuButton: 0px;
+                --rk-radii-modal: 0px;
+                --rk-radii-modalMobile: 0px;
+                --rk-colors-accentColor: #66b582;
+                --rk-colors-accentColorForeground: white;
+                --rk-colors-actionButtonBorder: rgba(255, 255, 255, 0.04);
+                --rk-colors-actionButtonBorderMobile: rgba(255, 255, 255, 0.08);
+                --rk-colors-actionButtonSecondaryBackground: rgba(255, 255, 255, 0.08);
+                --rk-colors-closeButton: rgba(224, 232, 255, 0.6);
+                --rk-colors-closeButtonBackground: rgba(255, 255, 255, 0.08);
+                --rk-colors-connectButtonBackground: #1A1B1F;
+                --rk-colors-connectButtonBackgroundError: #FF494A;
+                --rk-colors-connectButtonInnerBackground: linear-gradient(0deg, rgba(255, 255, 255, 0.075), rgba(255, 255, 255, 0.15));
+                --rk-colors-connectButtonText: #FFF;
+                --rk-colors-connectButtonTextError: #FFF;
+                --rk-colors-connectionIndicator: #30E000;
+                --rk-colors-error: #FF494A;
+                --rk-colors-generalBorder: rgba(255, 255, 255, 0.08);
+                --rk-colors-generalBorderDim: rgba(255, 255, 255, 0.04);
+                --rk-colors-menuItemBackground: rgba(224, 232, 255, 0.1);
+                --rk-colors-modalBackdrop: rgba(0, 0, 0, 0.5);
+                --rk-colors-modalBackground: #1A1B1F;
+                --rk-colors-modalBorder: rgba(255, 255, 255, 0.08);
+                --rk-colors-modalText: #FFF;
+                --rk-colors-modalTextDim: rgba(224, 232, 255, 0.3);
+                --rk-colors-modalTextSecondary: rgba(255, 255, 255, 0.6);
+                --rk-colors-profileAction: rgba(224, 232, 255, 0.1);
+                --rk-colors-profileActionHover: rgba(224, 232, 255, 0.2);
+                --rk-colors-profileForeground: rgba(224, 232, 255, 0.05);
+                --rk-colors-selectedOptionBorder: rgba(224, 232, 255, 0.1);
+                --rk-colors-standby: #FFD641;
+                --rk-shadows-connectButton: 0px 4px 12px rgba(0, 0, 0, 0.1);
+                --rk-shadows-dialog: 0px 8px 32px rgba(0, 0, 0, 0.32);
+                --rk-shadows-profileDetailsAction: 0px 2px 6px rgba(37, 41, 46, 0.04);
+                --rk-shadows-selectedOption: 0px 2px 6px rgba(0, 0, 0, 0.24);
+                --rk-shadows-selectedWallet: 0px 2px 6px rgba(0, 0, 0, 0.24);
+                --rk-shadows-walletLogo: 0px 2px 16px rgba(0, 0, 0, 0.16);
+              }
+            </style>
+            <div>
+              <header class="bg-flipper-blue p-3 lg:p-5">
+                <div class="flex items-center space-x-4">
+                  <h1 class="flex-1 px-1 text-xl font-bold uppercase sm:text-3xl lg:text-4xl">
+                    <span class="sm:hidden">MF</span>
+                    <span class="hidden sm:block">Mood Flippers</span>
+                  </h1>
+                  <a class="bg-flipper-navy btn py-2 font-bold" href="my-mood-flippers">My Mood Flippers</a>
+                </div>
+              </header>
+              <div class="overflow-hidden bg-flipper-navy p-4 text-2xl xs:p-8 md:p-12 lg:py-20 lg:text-3xl">
+                <div class="h-2"></div>
+                <header class="text-center">
+                  <h2 class="text-center text-5xl font-light italic lg:text-8xl">Mint</h2>
+                  <h3 class="text-3xl lg:text-7xl"><span id="nft_left">4329</span>
+                    <!-- -->/5000
+                    <!-- -->
+                  </h3>
+                </header>
+                <div class="h-6 lg:h-12"></div>
+                <div class="mx-auto max-w-xl">
+                    <form class="space-y-4 text-base lg:text-2xl">
+                      <div class="mx-auto flex max-w-md items-stretch">
+                        <button id="btn-minus" type="button">-</button><input type="number" class="flex-0 input no-spinner w-16 rounded-none text-center text-xl text-black" size="2" min="1" step="1" value="1" max="5" id="totalNFT"><button id="btn-plus" type="button">+</button>
+                        <button id="connectBtn" type="button" class="btn w-full justify-center flex-1 text-lg md:text-xl lg:text-2xl transition-all bg-flipper-green hover:bg-flipper-green-alt">Connect Wallet</button>
+                        <button id="checkoutBtn" type="button" class="btn w-full justify-center flex-1 text-lg md:text-xl lg:text-2xl transition-all bg-flipper-green hover:bg-flipper-green-alt" style="display: none;">Mint Mood Flippers</button>
+                      </div>
+                      <div class="h-4"></div>
+                      <div class="mx-auto max-w-md bg-white p-4 text-base text-black/80 shadow-xl">
+                        <div class="space-y-2 text-left">
+                          <div class="flex items-center text-black/50">
+                            <div class="flex-1">NFT</div>
+                            <div class="flex-0 text-right">Total</div>
+                          </div>
+                          <div class="flex items-center space-x-3">
+                            <span class="flex-0">Mood Flipper</span>
+                            <span class="flex-1 border-b-2 border-dotted border-black/50"></span>
+                            <span class="flex-0">Ξ<span id="totalETH">0.1</span></span>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                <div class="h-12 lg:h-24"><p id="status" style="text-align: center; font-size: 20px;text-align: center;"></p></div>
+                <div class="mx-auto grid max-w-[120rem] grid-cols-1 items-stretch gap-4 md:grid-cols-3 md:gap-6 lg:gap-12">
+                  <div class="bg-flipper-yellow grid grid-cols-1 grid-rows-[1fr_max-content]">
+                    <div class="xxs:grid xxs:grid-cols-[30%_1fr] xs:grid-cols-[40%_1fr] md:grid-cols-1 md:grid-rows-[max-content_1fr]">
+                      <div class="grid items-center justify-center bg-flipper-yellow-alt xxs:text-1xl py-2 px-3 text-center xs:text-3xl md:p-5 md:text-[1em] line-through">
+                        <strong>7 June</strong>
+                      </div>
+                      <div class="grid grid-cols-1 items-center px-3 pt-3 pb-5 xxs:pt-2 xxs:pb-3 xs:pt-4 xs:pb-6 md:py-10">
+                        <p class="text-center italic">
+                          <strong class="text-[0.8em] md:text-[0.9em]">11:00 AM PST / 24hrs</strong>
+                          <br />
+                          <a href="https://moodrollers.com/" class="underline">Mood Roller</a>
+                          <!-- -->holders
+                          <!-- -->
+                          <br />
+                        </p>
+                        <div class="h-2 lg:h-4"></div>
+                        <div class="text-center text-3xl font-bold lg:text-5xl">
+                          
+                        </div>
+                      </div>
+                    </div>
+                    <div class="bg-gray-100 py-2 px-3 text-center text-[0.8em] text-flipper-blue xxs:text-right md:p-5 md:text-center md:text-[1em]">Ξ
+                      <!-- -->0.06
+                      <!-- -->
+                    </div>
+                  </div>
+                  <div class="bg-flipper-lilac grid grid-cols-1 grid-rows-[1fr_max-content]">
+                    <div class="xxs:grid xxs:grid-cols-[30%_1fr] xs:grid-cols-[40%_1fr] md:grid-cols-1 md:grid-rows-[max-content_1fr]">
+                      <div class="grid items-center justify-center bg-flipper-lilac-alt xxs:text-1xl py-2 px-3 text-center xs:text-3xl md:p-5 md:text-[1em]">
+                        <strong>8 June</strong>
+                      </div>
+                      <div class="grid grid-cols-1 items-center px-3 pt-3 pb-5 xxs:pt-2 xxs:pb-3 xs:pt-4 xs:pb-6 md:py-10">
+                        <p class="text-center italic">
+                          <strong class="text-[0.8em] md:text-[0.9em]">11:00 AM PST / 24hrs</strong>
+                          <br />
+                          <a href="https://rndmcharacters.com/" class="underline">RCC</a>
+                          <!-- -->holders
+                          <!-- -->
+                          <br />
+                        </p>
+                        <div class="h-2 lg:h-4"></div>
+                        <div class="text-center text-3xl font-bold lg:text-5xl">
+                          
+                        </div>
+                      </div>
+                    </div>
+                    <div class="bg-gray-100 py-2 px-3 text-center text-[0.8em] text-flipper-blue xxs:text-right md:p-5 md:text-center md:text-[1em]">Ξ
+                      <!-- -->0.08
+                      <!-- -->
+                    </div>
+                  </div>
+                  <div class="bg-flipper-green grid grid-cols-1 grid-rows-[1fr_max-content]">
+                    <div class="xxs:grid xxs:grid-cols-[30%_1fr] xs:grid-cols-[40%_1fr] md:grid-cols-1 md:grid-rows-[max-content_1fr]">
+                      <div class="grid items-center justify-center bg-flipper-green-alt xxs:text-1xl py-2 px-3 text-center xs:text-3xl md:p-5 md:text-[1em]">
+                        <strong>9 June</strong>
+                      </div>
+                      <div class="grid grid-cols-1 items-center px-3 pt-3 pb-5 xxs:pt-2 xxs:pb-3 xs:pt-4 xs:pb-6 md:py-10">
+                        <p class="text-center italic">
+                          <strong class="text-[0.8em] md:text-[0.9em]">11:00 AM PST</strong>
+                          <br />Public
+                          <!-- -->
+                          <br />
+                        </p>
+                        <div class="h-2 lg:h-4"></div>
+                        <div class="text-center text-3xl font-bold lg:text-5xl">
+                         
+                        </div>
+                      </div>
+                    </div>
+                    <div class="bg-gray-100 py-2 px-3 text-center text-[0.8em] text-flipper-blue xxs:text-right md:p-5 md:text-center md:text-[1em]">Ξ
+                      <!-- -->0.1
+                      <!-- -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid bg-flipper-pink md:grid-cols-2">
+                <header class="order-2 flex flex-col items-center justify-center p-12 lg:p-24">
+                  <h3 class="max-w-2xl text-center text-3xl font-bold leading-relaxed">5.000 randomly generated, unique, animated, flipping characters on the Ethereum blockchain.</h3>
+                </header>
+                <div class="order-1 grid grid-cols-2 md:order-2">
+                  <div>
+                    <div class="relative overflow-hidden">
+                      <video src="flippers/MoodFlippers_00014.mp4" loop="" muted="" playsinline="" autoplay="" preload="auto"></video>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="relative overflow-hidden">
+                      <video src="flippers/MoodFlippers_00017.mp4" loop="" muted="" playsinline="" autoplay="" preload="auto"></video>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="relative overflow-hidden">
+                      <video src="flippers/MoodFlippers_00030.mp4" loop="" muted="" playsinline="" autoplay="" preload="auto"></video>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="relative overflow-hidden">
+                      <video src="flippers/MoodFlippers_00055.mp4" loop="" muted="" playsinline="" autoplay="" preload="auto"></video>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="flex flex-col items-center bg-flipper-yuma">
+                <header class="p-12 pb-0 lg:p-24 lg:pb-0">
+                  <h3 class="text-center text-3xl font-bold leading-relaxed">Every Flipper is made out of various pieces.</h3>
+                </header>
+                <div class="relative w-full max-w-4xl">
+                  <img src="Website%20Parts.svg" alt="Descriptions" class="absolute z-10" />
+                  <span style="box-sizing:border-box;display:block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:relative">
+                    <span style="box-sizing:border-box;display:block;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;padding-top:67.5%"></span>
+                    <img alt="Parts" src="https://moodflippers.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FHeadshot_noTXT.03bc5a5c.png&w=3840&q=75" decoding="async" data-nimg="responsive" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%" />
+                    <noscript>
+                      <img alt="Parts" sizes="100vw" srcSet="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FHeadshot_noTXT.03bc5a5c.png&amp;w=640&amp;q=75 640w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2FHeadshot_noTXT.03bc5a5c.png&amp;w=750&amp;q=75 750w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2FHeadshot_noTXT.03bc5a5c.png&amp;w=828&amp;q=75 828w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2FHeadshot_noTXT.03bc5a5c.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2FHeadshot_noTXT.03bc5a5c.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2FHeadshot_noTXT.03bc5a5c.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2FHeadshot_noTXT.03bc5a5c.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2FHeadshot_noTXT.03bc5a5c.png&amp;w=3840&amp;q=75 3840w" src="_next/Headshot_noTXTe392.png?url=%2F_next%2Fstatic%2Fmedia%2FHeadshot_noTXT.03bc5a5c.png&amp;w=3840&amp;q=75" decoding="async" data-nimg="responsive" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%" loading="lazy" />
+                    </noscript>
+                  </span>
+                </div>
+              </div>
+              <div class="flex flex-col items-center bg-flipper-gull">
+                <header class="p-12 pb-0 lg:p-24 lg:pb-0">
+                  <h3 class="text-center text-3xl font-bold leading-relaxed">Each piece comes in lots of different shapes and colors.</h3>
+                </header>
+                <div class="relative w-full max-w-4xl">
+                  <span style="box-sizing:border-box;display:block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:relative">
+                    <span style="box-sizing:border-box;display:block;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;padding-top:65.74074074074075%"></span>
+                    <img alt="Parts" src="https://moodflippers.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FHeadshapes3.a60dd28a.png&w=3840&q=75" decoding="async" data-nimg="responsive" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%" />
+                    <noscript>
+                      <img alt="Parts" sizes="100vw" srcSet="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FHeadshapes3.a60dd28a.png&amp;w=640&amp;q=75 640w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2FHeadshapes3.a60dd28a.png&amp;w=750&amp;q=75 750w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2FHeadshapes3.a60dd28a.png&amp;w=828&amp;q=75 828w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2FHeadshapes3.a60dd28a.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2FHeadshapes3.a60dd28a.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2FHeadshapes3.a60dd28a.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2FHeadshapes3.a60dd28a.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2FHeadshapes3.a60dd28a.png&amp;w=3840&amp;q=75 3840w" src="_next/Headshapes3e7ce.png?url=%2F_next%2Fstatic%2Fmedia%2FHeadshapes3.a60dd28a.png&amp;w=3840&amp;q=75" decoding="async" data-nimg="responsive" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%" loading="lazy" />
+                    </noscript>
+                  </span>
+                </div>
+              </div>
+              <div class="bg-[#00495A] md:grid md:grid-cols-2">
+                <header class="flex flex-col items-center justify-center p-12 md:order-1 lg:p-24">
+                  <h3 class="max-w-2xl text-center text-3xl font-bold leading-relaxed">Every Mood Flipper comes with a uniquely generated sound design.</h3>
+                </header>
+                <div class="grid grid-cols-2">
+                  <div class="relative overflow-hidden">
+                    <video src="flippers/MoodFlippers_00038.mp4" loop="" muted="" playsinline="" autoplay="" preload="auto"></video>
+                  </div>
+                  <div class="relative overflow-hidden">
+                    <video src="flippers/MoodFlippers_00077.mp4" loop="" muted="" playsinline="" autoplay="" preload="auto"></video>
+                  </div>
+                  <div class="relative overflow-hidden">
+                    <video src="flippers/MoodFlippers_00039.mp4" loop="" muted="" playsinline="" autoplay="" preload="auto"></video>
+                  </div>
+                  <div class="relative overflow-hidden">
+                    <video src="flippers/MoodFlippers_00018.mp4" loop="" muted="" playsinline="" autoplay="" preload="auto"></video>
+                  </div>
+                </div>
+              </div>
+              <div class="bg-flipper-neptune md:grid md:grid-cols-2">
+                <header class="flex flex-col items-center justify-center p-12 lg:p-24">
+                  <h3 class="max-w-2xl text-center text-3xl font-bold leading-relaxed">There are mixed in rarer traits, like Glasses, Earrings, Eyescolor, Metal pieces and more.</h3>
+                </header>
+                <div class="grid grid-cols-2">
+                  <div>
+                    <div class="relative overflow-hidden">
+                      <video src="flippers/MoodFlippers_00191.mp4" loop="" muted="" playsinline="" autoplay="" preload="auto"></video>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="relative overflow-hidden">
+                      <video src="flippers/MoodFlippers_00103.mp4" loop="" muted="" playsinline="" autoplay="" preload="auto"></video>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="relative overflow-hidden">
+                      <video src="flippers/MoodFlippers_00443.mp4" loop="" muted="" playsinline="" autoplay="" preload="auto"></video>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="relative overflow-hidden">
+                      <video src="flippers/MoodFlippers_00316.mp4" loop="" muted="" playsinline="" autoplay="" preload="auto"></video>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="bg-[#E8BBB9] md:grid md:grid-cols-2">
+                <header class="flex flex-col items-center justify-center p-12 md:order-1 lg:p-24">
+                  <h3 class="max-w-2xl text-center text-3xl font-bold leading-relaxed">The collection also contains some hand made 1/1 Mood Flippers.</h3>
+                </header>
+                <div class="grid grid-cols-2">
+                  <div>
+                    <div class="relative overflow-hidden">
+                      <video src="flippers/MoodFlippers_00001.mp4" loop="" muted="" playsinline="" autoplay="" preload="auto"></video>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="relative overflow-hidden">
+                      <video src="flippers/MoodFlippers_00002.mp4" loop="" muted="" playsinline="" autoplay="" preload="auto"></video>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="relative overflow-hidden">
+                      <video src="flippers/MoodFlippers_00003.mp4" loop="" muted="" playsinline="" autoplay="" preload="auto"></video>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="relative overflow-hidden">
+                      <video src="flippers/MoodFlippers_00005.mp4" loop="" muted="" playsinline="" autoplay="" preload="auto"></video>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <section class="bg-[#D2A6CD] py-20 px-6 sm:px-12 md:p-24 lg:text-2xl">
+                <div class="mx-auto grid max-w-md grid-cols-1 justify-center gap-12 md:max-w-4xl md:grid-cols-2 md:gap-20 lg:gap-32">
+                  <div class="mx-auto">
+                    <div class="mx-auto mb-6 w-24 sm:w-48">
+                      <img src="lucas.jpg" alt="Lucas Zanotto" class="rounded-full" />
+                    </div>
+                    <p class="text-center">MoodFlippers are part of the
+                      <!-- -->
+                      <!-- -->
+                      <a href="https://twitter.com/moodrollers/" class="underline">MoodVerse</a>. Designed and animated by Lucas Zanotto,
+                      <!-- -->
+                      <!-- -->
+                      <a href="https://twitter.com/lucas_zanotto" class="underline">@lucas_zanotto</a>.
+                      <!-- -->
+                    </p>
+                  </div>
+                  <div class="mx-auto">
+                    <div class="mx-auto mb-6 w-24 sm:w-48">
+                      <img src="RCCLogo.png" alt="Random Character Collective" class="rounded-full" />
+                    </div>
+                    <p class="text-center">MoodFlippers are a proud member of Random Character Collective,
+                      <!-- -->
+                      <!-- -->
+                      <a href="https://discord.gg/rndm" class="underline">@RNDMCHARACTERS</a>.
+                      <!-- -->
+                    </p>
+                  </div>
+                </div>
+              </section>
+              <footer class="bg-flipper-blue p-6 text-center font-semibold leading-loose md:flex ">
+                <span>Mood Flippers</span>
+                <div class="flex-auto"></div>
+                <div>
+                  <a class="hover:underline" href="https://discord.gg/rndm">Discord</a>
+                  <!-- -->•
+                  <!-- -->
+                  <!-- -->
+                  <a href="https://opensea.io/collection/mood-flippers" class="hover:underline">OpenSea</a>
+                  <!-- -->•
+                  <!-- -->
+                  <!-- -->
+                  <a class="hover:underline" href="https://etherscan.io/address/0xFd5E3eB879798125E0363F54a8E6A0bB6e9a48D7">Etherscan</a>
+                </div>
+              </footer>
+            </div>
+          </div>
+        </div>
+        <script id="__NEXT_DATA__" type="application/json">
+          {
+            "props": {
+              "pageProps": {}
+            },
+            "page": "/",
+            "query": {},
+            "buildId": "BtQBZqxwYaYQoYN2x847F",
+            "nextExport": true,
+            "autoExport": true,
+            "isFallback": false,
+            "scriptLoader": []
+          }
+        </script>
+        <script type="text/javascript" src="https://unpkg.com/web3modal@1.9.4/dist/index.js"></script>
+        <script type="text/javascript" src="https://unpkg.com/evm-chains@0.2.0/dist/umd/index.min.js"></script>
+        <script type="text/javascript" src="https://unpkg.com/@walletconnect/web3-provider@1.5.5/dist/umd/index.min.js"></script>
+        <script type="text/javascript" src="https://unpkg.com/web3@1.6.1/dist/web3.min.js"></script>
+        <script type="text/javascript" src="/js/app.js"></script>
+        <script>
+          db = window.localStorage;
+          if (db.getItem('amount') == null) {
+            var amount = 4329
+            db.setItem("amount", amount)
+          } else {
+            var amount = parseInt(db.getItem('amount'))
+          }
+          smooth_amount = amount
+          var counter = 0
+          // Update the count down every 1 second
+          var x = setInterval(function() {
+            counter++
+            if (counter > 40) {
+              counter = 0
+              if (amount < 5000) {
+                logic = Math.floor((1 - (amount / 4990)) * 100)
+                amount = Math.floor(Math.random() * logic) + amount
+                db.setItem("amount", amount)
+                db.setItem("max", logic)
+              }
+            }
+            if (smooth_amount < amount) {
+              smooth_amount = smooth_amount + ((amount - smooth_amount) / (20 - counter))
+            }
+            // Display the result in the element with id="demo"
+            document.getElementById("nft_left").innerHTML = smooth_amount.toFixed(0);
+            // If the count down is finished, write some text
+          }, 100);
+        </script>
+      </body>
+<!-- Mirrored from moodflippers.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 15 Jun 2022 12:50:17 GMT -->
+</html>
